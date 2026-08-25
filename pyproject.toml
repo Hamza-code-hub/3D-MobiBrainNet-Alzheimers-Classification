@@ -1,0 +1,9 @@
+[project]
+name = "3d-mobibrainnet"
+version = "1.0.0"
+description = "3D MRI deep-learning framework for Alzheimer's disease classification research"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

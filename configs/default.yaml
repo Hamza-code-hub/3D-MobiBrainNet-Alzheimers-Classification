@@ -1,0 +1,25 @@
+project:
+  name: 3D-MobiBrainNet-Alzheimers-Classification
+
+data:
+  root: dataset
+  classes:
+    - AD
+    - MCI
+    - CN
+  volume_size:
+    - 96
+    - 96
+    - 96
+  validation_split: 0.20
+
+model:
+  name: mobibrainnet
+  num_classes: 3
+
+training:
+  epochs: 30
+  batch_size: 2
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  random_seed: 42
